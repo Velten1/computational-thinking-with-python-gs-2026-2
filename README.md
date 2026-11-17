@@ -10,10 +10,11 @@ Turma 1TIAPZ
 - João Vitor Fernandes Gomes — RM 573882
 - Igor Cypriano Moreno da Silva — RM 570353
 
-## Rodar no Windows
+## Relatório e reprodução
+
+O [relatório de entrega](VIGIA%20-%20Entrega%20Computational%20Thinking%20with%20Python.pdf) apresenta o contrato da API e os registros da demonstração. Para reproduzir os testes no Windows, abra um terminal na pasta clonada do repositório.
 
 ```powershell
-cd VIGIA-Python
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m uvicorn main:app
@@ -58,8 +59,8 @@ O nível aceita 0 a 100 cm na montagem didática. A API também aceita `chuva_mm
 | Quatro minutos depois | 32 cm | atencao | 1,75 cm/min |
 | Mais quatro minutos | 46 cm | critico | 3,5 cm/min |
 
-O simulador imprime as três requisições, respostas e resumos. Para a entrega, capture também o GET do histórico e as três linhas correspondentes do CSV. Use o ID impresso para reunir as evidências.
+Executamos as três leituras via HTTP e consultamos o histórico gerado. O relatório registra o JSON, a resposta, a linha correspondente no CSV e o indicador de cada cenário. Também verificamos que um reenvio idêntico manteve apenas a linha original, que um ID reutilizado com outro valor retornou 409 e que uma leitura inválida retornou 422.
 
 ## Limites do protótipo
 
-O CSV funciona com uma instância do servidor em um único processo, como no comando acima. O serviço local ainda precisa de proteção de escrita antes de ser exposto à internet. O contrato está documentado para conectar o ESP32 e combinar o encaminhamento à Lambda com a equipe de Cloud. Os estados representam a regra didática de nível da API, e o firmware pode aplicar regras locais adicionais.
+Demonstramos a API localmente com requisições HTTP simuladas. O CSV foi projetado para uma instância em um único processo. Os estados resultam de limiares didáticos de nível, e a velocidade descreve a variação entre duas medições. A integração física com o ESP32 e o encaminhamento à Lambda ficam fora da demonstração apresentada.
