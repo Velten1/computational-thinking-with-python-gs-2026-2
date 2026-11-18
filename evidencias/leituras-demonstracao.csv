@@ -1,0 +1,4 @@
+leitura_id,dispositivo_id,metrica,valor,medido_em,origem,recebido_em,classificacao
+vigia-demo-3ceb22e3-1,vigia-demo-3ceb22e3,nivel_agua_cm,25.0,2026-11-18T21:14:00Z,simulacao,2026-11-18T21:22:50.958184Z,normal
+vigia-demo-3ceb22e3-2,vigia-demo-3ceb22e3,nivel_agua_cm,32.0,2026-11-18T21:18:00Z,simulacao,2026-11-18T21:22:51.003435Z,atencao
+vigia-demo-3ceb22e3-3,vigia-demo-3ceb22e3,nivel_agua_cm,46.0,2026-11-18T21:22:00Z,simulacao,2026-11-18T21:22:51.041659Z,critico

@@ -64,3 +64,5 @@ Executamos as três leituras via HTTP e consultamos o histórico gerado. O relat
 ## Limites do protótipo
 
 Demonstramos a API localmente com requisições HTTP simuladas. O CSV foi projetado para uma instância em um único processo. Os estados resultam de limiares didáticos de nível, e a velocidade descreve a variação entre duas medições. A integração física com o ESP32 e o encaminhamento à Lambda ficam fora da demonstração apresentada.
+
+O [CSV da demonstração HTTP](evidencias/leituras-demonstracao.csv) contém as três leituras de uma execução adicional do simulador, com horários próprios dessa execução. Ele permite inspecionar o histórico persistido. Os cenários reproduzem os níveis de 25, 32 e 46 cm, com as mesmas classes e indicadores apresentados no relatório.
