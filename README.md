@@ -66,3 +66,11 @@ Executamos as três leituras via HTTP e consultamos o histórico gerado. O relat
 Demonstramos a API localmente com requisições HTTP simuladas. O CSV foi projetado para uma instância em um único processo. Os estados resultam de limiares didáticos de nível, e a velocidade descreve a variação entre duas medições. A integração física com o ESP32 e o encaminhamento à Lambda ficam fora da demonstração apresentada.
 
 O [CSV da demonstração HTTP](evidencias/leituras-demonstracao.csv) contém as três leituras de uma execução adicional do simulador, com horários próprios dessa execução. Ele permite inspecionar o histórico persistido. Os cenários reproduzem os níveis de 25, 32 e 46 cm, com as mesmas classes e indicadores apresentados no relatório.
+
+## Acesso aos materiais do projeto
+
+- [Código e arquivos desta disciplina](https://github.com/Velten1/computational-thinking-with-python-gs-2026-2).
+- [Vídeo de Machine Learning — 4 min 58 s](https://drive.google.com/file/d/1oqzxu0OJ2w-q37rjfVNTdDrXExXVLibJ/view).
+- [Vídeo de Redes Neurais — 3 min 28 s](https://drive.google.com/file/d/1wOi7uYgDDL4ATO8dc5K9xpFv59M8KZYa/view).
+
+Em Python, a demonstração é apresentada no relatório, no simulador HTTP e no CSV de evidências. Os vídeos acima apresentam os modelos de previsão do ecossistema VIGIA.
